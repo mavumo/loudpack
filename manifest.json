@@ -1,0 +1,74 @@
+{
+  "background_color": "#ffffff",
+  "description": "Premium strains, edibles and accessories delivered straight to your doorstep.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Loudpack",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Loudpack",
+  "start_url": "https://loudpack.co.za/",
+  "theme_color": "#ffffff",
+  "categories": ["shopping", "community"],
+  "screenshots": [
+    {
+      "src": "https://moonclub.co.za/MoonClub-Icon.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "https://moonclub.co.za/screenshot_2.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
+  ],
+  "icons": [
+ {
+  "src": "https://loudpack.co.za/00F91BE7-4E65-44E8-8C44-68D21A9584B7.webp",
+  "sizes": "144x144",
+  "type": "image/png",
+  "purpose": "maskable"
+},    
+
+{
+            "src": "https://loudpack.co.za/00F91BE7-4E65-44E8-8C44-68D21A9584B7.webp",
+            "sizes": "192x192",
+            "type": "image/webp"
+        },
+        {
+            "src": "https://loudpack.co.za/00F91BE7-4E65-44E8-8C44-68D21A9584B7.webp",
+            "sizes": "256x256",
+            "type": "image/webp"
+        },
+        {
+            "src": "https://loudpack.co.za/00F91BE7-4E65-44E8-8C44-68D21A9584B7.webp",
+            "sizes": "384x384",
+            "type": "image/webp"
+        },
+        {
+            "src": "https://moonclub.co.za/00F91BE7-4E65-44E8-8C44-68D21A9584B7.webp",
+            "sizes": "512x512",
+            "type": "image/webp"
+        }
+  ],
+  "shortcuts": [
+{
+"name": "Catalog",
+"description": "Check out the latest products and offers.",
+"src": "/shop"
+},
+
+{
+"name": "Support",
+"description": "Check out the latest content recommendations.",
+"src": "/support"
+},
+
+{
+"name": "Promotions",
+"description": "Check out the latest video tutorials.",
+"src": "/promotions"
+}
+
+]
+}
