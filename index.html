@@ -823,6 +823,24 @@ MemberStack.onReady.then(function(member) {
     
   })();
   </script>
+
+<sl-dialog label="Dialog" class="dialog-overview">
+  Sorry, you must be an active member of our community to access premium content.
+  <sl-button slot="footer" variant="primary">Close</sl-button>
+</sl-dialog>
+
+
+<script>
+  const dialog = document.querySelector('.dialog-overview');
+  const openButton = dialog.nextElementSibling;
+  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+  openButton.addEventListener('click', () => dialog.show());
+  closeButton.addEventListener('click', () => dialog.hide());
+</script>
+
+
+
   <div id="Banner" class="banner">
     <div class="banner-wrap">
       <div class="notice-text">
@@ -883,20 +901,6 @@ MemberStack.onReady.then(function(member) {
     </div>
   </div>
 
-<sl-dialog label="Dialog" class="dialog-overview">
-  Sorry, you must be an active member of our community to access premium content.
-  <sl-button slot="footer" variant="primary">Close</sl-button>
-</sl-dialog>
-
-
-<script>
-  const dialog = document.querySelector('.dialog-overview');
-  const openButton = dialog.nextElementSibling;
-  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
-
-  openButton.addEventListener('click', () => dialog.show());
-  closeButton.addEventListener('click', () => dialog.hide());
-</script>
 
 <!-- BEGIN content_for_index -->
 
@@ -916,10 +920,10 @@ MemberStack.onReady.then(function(member) {
 <div style=
         "-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
         class="button-wrapper">
-          <sl-button data-node-type=
+          <a data-node-type=
           "commerce-cart-open-link" class=
           "a w-commerce-commercecartopenlink cart-button w-inline-block">
-          Create An Account</sl-button>
+          Create An Account</a>
         </div>
 
 
