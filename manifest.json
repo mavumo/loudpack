@@ -1,13 +1,13 @@
 {
   "background_color": "#ffffff",
-  "description": "LOUDPACK®",
+  "description": "South Africa's Premier Crypto Hub",
   "dir": "ltr",
   "display": "standalone",
   "name": "LOUDPACK®",
-  "orientation": "any",
+  "orientation": "portrait",
   "scope": "/",
-  "short_name": "LOUDPACK®",
-  "start_url": "/",
+  "short_name": "LOUD",
+  "start_url": "/login",
   "theme_color": "#35b8be",
   "categories": [],
   "screenshots": [],
@@ -36,6 +36,12 @@
       "src": "https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b17076b5ec_webclip.png",
       "type": "image/png",
       "sizes": "256x256"
+    },
+
+{
+      "src": "https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b17076b5ec_webclip.png",
+      "type": "image/png",
+      "sizes": "512x512"
     },
     {
       "src": "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/Phone_Wallpaper_Mockup_Instagram_Story_Design.png?v=1618892682",
