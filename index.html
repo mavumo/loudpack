@@ -170,6 +170,27 @@
  
 
 
+
+<!--Memberstack to Crisp-->
+
+<script>
+MemberStack.onReady.then(function(member) {
+    var email = member["email"]
+    var name = member["name"]
+    if (member.loggedIn) {
+      try{
+        $crisp.push(["set", "user:email", [email] ])
+        $crisp.push(["set", "user:nickname", [name] ])
+      } catch(e) {
+    }
+  }
+})
+</script>
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ad91fdad-2b0a-4d81-84bd-61133009c574";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+
 <!--MS session duration-->
 
 <script>
