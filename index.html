@@ -11,7 +11,7 @@
   <meta id="shopify-digital-wallet" name="shopify-digital-wallet"
   content="/9008873587/digital_wallets/dialog">
   <script id="shopify-features" type="application/json">
-  {"accessToken":"1c246f7993deb2648896d0372f84b9f8","betas":["rich-media-storefront-analytics"],"domain":"skybox.life","predictiveSearch":true,"shopId":9008873587,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}
+  {"accessToken":"1c246f7993deb2648896d0372f84b9f8","betas":["rich-media-storefront-analytics"],"domain":"loudpack.co.za","predictiveSearch":true,"shopId":9008873587,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en"}
   </script>
   <script>
   var Shopify = Shopify || {};
@@ -111,7 +111,8 @@
 
 
 
-
+<!-- Memberstack --> 
+<script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="96e1f55f081ffc5f231f4b05e1bff298"> </script> 
 
 
  <script type="module">
@@ -167,6 +168,17 @@
   <script data-ad-client="ca-pub-5710858543203237" async src=
   "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
  
+
+
+<!--MS session duration-->
+
+<script>
+  ms_settings = {
+  session:  72 //hours
+  }
+</script>
+
+
 
 <!---SNIPCART STYLESHEET--->
 
@@ -447,7 +459,15 @@
   <meta property="og:image:height" content="1920">
   <link href="https://monorail-edge.shopifysvc.com" rel=
   "dns-prefetch">
-  <script>
+  
+
+<!--Redirect if JS is disabled-->
+
+<noscript>
+   <meta http-equiv="refresh" content="0; url=https://www.memberstack.io" />
+</noscript>
+
+<script>
   (function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 9008873587,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());
   </script> 
   <script>
@@ -839,7 +859,7 @@
         class="review-wrap">
           <img src=
           "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/comingsoon_1.png"
-          width="150" height="auto" alt="Google Reviews Logo"
+          width="150" height="auto" alt="Mobile App Coming Soon"
           class="review-logo">
           <div style="visibility:hidden" class="review-text">
             Get Our <span class="brand-span">Mobile App!</span>
@@ -869,8 +889,8 @@
           alt="Register" class="step-image">
           <div class="content-wrapper">
             <h4>SIGN UP</h4>
-            <p><strong>Sign up for full access to our service
-            including free deliveries for just R99 per
+            <p><strong>Sign up for full access to our platform
+            for just R79 per
             month.</strong><br>
             <br>
             You can cancel anytime.</p>
@@ -900,10 +920,10 @@
           alt="Order online" class="step-image">
           <div class="content-wrapper">
             <h4>START SHOPPING!</h4>
-            <p><strong>Visit our online store or contact our support team on
-            WhatsApp to place your order.</strong><br>
+            <p><strong>Shop our exclusive catalog online or contact our support team on
+            WhatsApp for assistance.</strong><br>
             <br>
-            Android & iOS app coming soon!</p>
+            Refer friends & get cash-back rewards.</p>
           </div>
         </div>
       </div>
