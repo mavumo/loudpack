@@ -172,6 +172,11 @@
 
 
 
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.64/dist/components/dialog/dialog.js"></script>
+
+
+
+
 <!--Memberstack to Crisp-->
 
 <script>
@@ -835,7 +840,10 @@ MemberStack.onReady.then(function(member) {
         <div class="menu-button w-nav-button">
           <div class="icon w-icon-nav-menu"></div>
         </div>
-        <div class="w-commerce-commercecartwrapper">
+        
+
+
+<div class="w-commerce-commercecartwrapper">
           <a href="#" class=
           "w-commerce-commercecartopenlink cart-button w-inline-block snipcart-checkout">
           <svg class=
@@ -848,38 +856,70 @@ MemberStack.onReady.then(function(member) {
             fill="currentColor" fill-rule="nonzero"></path>
           </g></svg> 0</a>
         </div>
+
+
+
         <nav role="navigation" class="nav-menu w-nav-menu">
           <a href="/about" aria-current="page" class=
           "nav-link w-nav-link w--current">About</a><a href=
           "#" class=
-          "nav-link w-nav-link">Tokens</a><a href="/shop"
+          "nav-link w-nav-link">LoudNFT</a>
+
+<a href="/catalog"
           class="nav-link w-nav-link">Catalog</a><a href=
           "/support" class="nav-link w-nav-link">Support</a>
         </nav>
       </div>
     </div>
-  </div><!-- BEGIN content_for_index -->
+  </div>
+
+<sl-dialog label="Dialog" class="dialog-overview">
+  Sorry, you must be an active member of our community to access premium content.
+  <sl-button slot="footer" variant="primary">Close</sl-button>
+</sl-dialog>
+
+
+<script>
+  const dialog = document.querySelector('.dialog-overview');
+  const openButton = dialog.nextElementSibling;
+  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+  openButton.addEventListener('click', () => dialog.show());
+  closeButton.addEventListener('click', () => dialog.hide());
+</script>
+
+<!-- BEGIN content_for_index -->
+
+
+
   <!-- END content_for_index -->
   <div id="Header" class="header">
     <div class="container-flex">
       <div class="hero-content">
         <h1 style=
         "-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-        class="hero-h1">Premium strains, edibles & accessories,
-        <span class="brand-span">delivered to your
-        doorstep.</span></h1>
-        <div style=
+        class="hero-h1">South Africa's
+        <span class="brand-span">Premier Cannabis Hub</span></h1>
+        
+
+
+<div style=
         "-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
         class="button-wrapper">
-          <a href="#ph-quiz-uRET2hcOlI" data-node-type=
+          <sl-button data-node-type=
           "commerce-cart-open-link" class=
-          "w-commerce-commercecartopenlink cart-button w-inline-block">
-          Create An Account</a>
+          "a w-commerce-commercecartopenlink cart-button w-inline-block">
+          Create An Account</sl-button>
         </div>
+
+
+
+
+
         <div style=
         "-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
         class="review-wrap">
-          <img src=
+         <img src=
           "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/comingsoon_1.png"
           width="150" height="auto" alt="Mobile App Coming Soon"
           class="review-logo">
@@ -902,7 +942,7 @@ MemberStack.onReady.then(function(member) {
 
 
 
-  <div data-ms-content="!members-only" class="content-section-bg">
+  <div class="content-section-bg">
     <div class="container">
       <div class="title-wrap-centre">
         <h2>How does it work?</h2>
@@ -955,7 +995,7 @@ MemberStack.onReady.then(function(member) {
   </div>
 
 
-  <div data-ms-content="members-only" class="content-section">
+  <div class="content-section">
     <div class="container">
       <div class="title-wrap-centre">
         <h3>Products</h3>
