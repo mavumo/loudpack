@@ -1015,44 +1015,321 @@ MemberStack.onReady.then(function(member) {
             <div class="w-dyn-list">
               <div role="list" class=
               "order-collection w-dyn-items w-row">
-                <div id="blue-cheese" role="listitem" class=
+                
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'loudpack-za.myshopify.com',
+      storefrontAccessToken: 'bdd3ab261576357fb111ca826b9c214e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '7539835109593',
+        node: document.getElementById('product-component-1643658561748'),
+        moneyFormat: 'R%20%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "title": {
+        "font-family": "Montserrat, sans-serif",
+        "color": "#000000"
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#009d9d"
+        },
+        "background-color": "#00aeae",
+        ":focus": {
+          "background-color": "#009d9d"
+        }
+      },
+      "price": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "bold",
+        "color": "#000000"
+      },
+      "compareAt": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "bold",
+        "color": "#000000"
+      },
+      "unitPrice": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "bold",
+        "color": "#000000"
+      },
+      "description": {
+        "font-family": "Montserrat, sans-serif",
+        "font-size": "16px",
+        "color": "#000000"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    },
+    "googleFonts": [
+      "Montserrat"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#009d9d"
+        },
+        "background-color": "#00aeae",
+        ":focus": {
+          "background-color": "#009d9d"
+        }
+      },
+      "title": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#000000"
+      },
+      "price": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "bold",
+        "font-size": "18px",
+        "color": "#000000"
+      },
+      "compareAt": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "bold",
+        "font-size": "15.299999999999999px",
+        "color": "#000000"
+      },
+      "unitPrice": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "bold",
+        "font-size": "15.299999999999999px",
+        "color": "#000000"
+      },
+      "description": {
+        "font-family": "Montserrat, sans-serif",
+        "font-weight": "normal",
+        "font-size": "16px",
+        "color": "#000000"
+      }
+    },
+    "googleFonts": [
+      "Montserrat"
+    ],
+    "text": {
+      "button": "Add To Cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#009d9d"
+        },
+        "background-color": "#00aeae",
+        ":focus": {
+          "background-color": "#009d9d"
+        }
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "title": "Shopping Cart",
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "contents": {
+      "note": true
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#00aeae",
+        ":hover": {
+          "background-color": "#009d9d"
+        },
+        ":focus": {
+          "background-color": "#009d9d"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<div id="product-component-1643658561748" role="listitem" class=
                 "menu-item w-dyn-item w-col w-col-6">
                   <div class="food-card">
                     <a href="#" class=
                     "food-image-square w-inline-block"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
                     src=
                     "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/BLUE.png"
-                    alt="Blue Cheese" class="food-image"></a>
+                    alt="Bluelight Regrade" class="food-image"></a>
                     <div class="food-card-content">
                       <a href="/products/blue-cheese" class=
                       "food-title-wrap w-inline-block snipcart-add-item">
-                      <h6>Blue Cheese</h6>
+                      <h6>Bluelight Regrade</h6>
                       <div data-wf-sku-bindings=
                       "%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
                       class="price">
-                        R75.00 per/g
+                        R40.00 per/g
                       </div></a>
                       <p class="paragraph">Offers a pleasant taste
                       and the perfect balance of relaxation without
                       the drowsiness.</p>
-                      <div class="add-to-cart">
+                      
+
+<div id='product-component-1643658561748' class="add-to-cart">
                         <a href="#" class=
-                        "w-commerce-commerceaddtocartbutton order-button snipcart-add-item"
-                        data-item-id="blue-cheese" data-item-price=
-                        "99.99" data-item-url=
-                        "/products/blue-cheese"
-                        data-item-description=
-                        "Offers a pleasant taste and the perfect balance of relaxation without the drowsiness."
-                        data-item-image=
-                        "https://cdn.shopify.com/s/files/1/0090/0887/3587/files/BLUE.png"
-                        data-item-name="Blue Cheese"
-                        data-item-custom1-name="Same-Day Delivery"
-                        data-item-custom1-type="checkbox"
-                        data-item-taxable="false">Add To Cart</a>
+                        "w-commerce-commerceaddtocartbutton order-button">Add To Cart</a>
                       </div>
                     </div>
                   </div>
                 </div>
+
+
+
+
+
                 <div id="dimebag" role="listitem" class=
                 "menu-item w-dyn-item w-col w-col-6">
                   <div class="food-card">
