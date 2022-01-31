@@ -86,7 +86,7 @@ visibility:hidden!important;
 
 
 
-     <!---   <div data-node-type="commerce-cart-wrapper"
+      <div data-node-type="commerce-cart-wrapper"
         data-open-product="" data-wf-cart-type="rightSidebar"
         data-wf-cart-query=
         "query Dynamo2 { database { id commerceOrder { comment extraItems { name pluginId pluginName price { value unit decimalValue string } } id startedOn statusFlags { hasDownloads hasSubscription isFreeOrder requiresShipping } subtotal { value unit decimalValue string } total { value unit decimalValue string } updatedOn userItems { count sku { f__draft_0ht f__archived_0ht f_main_image_4dr { url file { size origFileName createdOn updatedOn mimeType width height variants { origFileName quality height width s3Url error size } } alt } f_price_ { value unit decimalValue string } f_sku_values_3dr { property { id } value { id } } id } product { id f__draft_0ht f__archived_0ht f_name_ f_sku_properties_3dr { id name enum { id name slug } } } id rowTotal { value unit decimalValue string } } userItemsCount } } site { id commerce { businessAddress { country } defaultCountry defaultCurrency quickCheckoutEnabled } } }"
@@ -307,7 +307,7 @@ visibility:hidden!important;
         </div>
       </div>
     </div>
---->
+
 
   </div>
   <div class="header-section">
