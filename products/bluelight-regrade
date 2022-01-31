@@ -19,6 +19,15 @@
   /* This CSS was added to fix missing styles. Republish your site to fix your styles. */
   #w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da5a-dcc6da57{-ms-grid-row:span 1;grid-row-start:span 1;-ms-grid-row-span:1;grid-row-end:span 1;-ms-grid-column:span 2;grid-column-start:span 2;-ms-grid-column-span:2;grid-column-end:span 2}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da5e-dcc6da57{-ms-grid-column-span:1;grid-column-end:4;-ms-grid-column:3;grid-column-start:3;-ms-grid-row-span:1;grid-row-end:2;-ms-grid-row:1;grid-row-start:1}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da69-dcc6da57{-ms-grid-column-span:1;grid-column-end:5;-ms-grid-column:4;grid-column-start:4;-ms-grid-row-span:1;grid-row-end:2;-ms-grid-row:1;grid-row-start:1}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da72-dcc6da57{-ms-grid-column-span:1;grid-column-end:6;-ms-grid-column:5;grid-column-start:5;-ms-grid-row-span:1;grid-row-end:2;-ms-grid-row:1;grid-row-start:1}@media screen and (max-width:991px){#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da5a-dcc6da57{-ms-grid-row:span 1;grid-row-start:span 1;-ms-grid-row-span:1;grid-row-end:span 1;-ms-grid-column:span 2;grid-column-start:span 2;-ms-grid-column-span:2;grid-column-end:span 2}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da72-dcc6da57{-ms-grid-column-span:1;grid-column-end:6;-ms-grid-column:5;grid-column-start:5;-ms-grid-row-span:1;grid-row-end:2;-ms-grid-row:1;grid-row-start:1}}@media screen and (max-width:767px){#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da5a-dcc6da57{-ms-grid-row:span 1;grid-row-start:span 1;-ms-grid-row-span:1;grid-row-end:span 1;-ms-grid-column:span 3;grid-column-start:span 3;-ms-grid-column-span:3;grid-column-end:span 3}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da5e-dcc6da57{-ms-grid-column:1;grid-column-start:1;-ms-grid-column-span:1;grid-column-end:2;-ms-grid-row:2;grid-row-start:2;-ms-grid-row-span:1;grid-row-end:3}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da69-dcc6da57{-ms-grid-column:2;grid-column-start:2;-ms-grid-column-span:1;grid-column-end:3;-ms-grid-row:2;grid-row-start:2;-ms-grid-row-span:1;grid-row-end:3}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da72-dcc6da57{-ms-grid-column:3;grid-column-start:3;-ms-grid-column-span:1;grid-column-end:4;-ms-grid-row:2;grid-row-start:2;-ms-grid-row-span:1;grid-row-end:3}}@media screen and (max-width:479px){#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da5a-dcc6da57{-ms-grid-row:span 1;grid-row-start:span 1;-ms-grid-row-span:1;grid-row-end:span 1;-ms-grid-column:span 3;grid-column-start:span 3;-ms-grid-column-span:3;grid-column-end:span 3}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da5e-dcc6da57{-ms-grid-column-span:3;grid-column-end:4;-ms-grid-column:1;grid-column-start:1;-ms-grid-row-span:1;grid-row-end:3;-ms-grid-row:2;grid-row-start:2}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da69-dcc6da57{-ms-grid-column:1;grid-column-start:1;-ms-grid-column-span:3;grid-column-end:4;-ms-grid-row:3;grid-row-start:3;-ms-grid-row-span:1;grid-row-end:4}#w-node-_67f7db32-28d2-9f37-8b84-a159dcc6da72-dcc6da57{-ms-grid-column:1;grid-column-start:1;-ms-grid-column-span:3;grid-column-end:4;-ms-grid-row:4;grid-row-start:4;-ms-grid-row-span:1;grid-row-end:5}}
   </style>
+
+
+<style>
+.w-webflow-badge {
+display:none!important;
+visibility:hidden!important;
+}
+</style>
+
   <link href=
   "https://assets.website-files.com/5e865e09d8efa3310676b585/css/chomp.webflow.b84e4399e.css"
   rel="stylesheet" type="text/css">
@@ -74,7 +83,10 @@
           "mailto:hello@website.com?subject=Hi" class=
           "nav-link w-nav-link">Contact</a>
         </nav>
-        <div data-node-type="commerce-cart-wrapper"
+
+
+
+     <!---   <div data-node-type="commerce-cart-wrapper"
         data-open-product="" data-wf-cart-type="rightSidebar"
         data-wf-cart-query=
         "query Dynamo2 { database { id commerceOrder { comment extraItems { name pluginId pluginName price { value unit decimalValue string } } id startedOn statusFlags { hasDownloads hasSubscription isFreeOrder requiresShipping } subtotal { value unit decimalValue string } total { value unit decimalValue string } updatedOn userItems { count sku { f__draft_0ht f__archived_0ht f_main_image_4dr { url file { size origFileName createdOn updatedOn mimeType width height variants { origFileName quality height width s3Url error size } } alt } f_price_ { value unit decimalValue string } f_sku_values_3dr { property { id } value { id } } id } product { id f__draft_0ht f__archived_0ht f_name_ f_sku_properties_3dr { id name enum { id name slug } } } id rowTotal { value unit decimalValue string } } userItemsCount } } site { id commerce { businessAddress { country } defaultCountry defaultCurrency quickCheckoutEnabled } } }"
@@ -118,6 +130,8 @@
                   </g>
                 </g></svg></a>
               </div>
+--->
+
               <div class="w-commerce-commercecartformwrapper">
                 <form data-node-type="commerce-cart-form" style=
                 "display:none" class="w-commerce-commercecartform">
