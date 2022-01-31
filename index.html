@@ -111,10 +111,6 @@
 
 
 
-<!-- Memberstack --> 
-<script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="96e1f55f081ffc5f231f4b05e1bff298"> </script> 
-
-
  <script type="module">
    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
    const el = document.createElement('pwa-update');
@@ -150,49 +146,11 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
  
 
 
-
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.64/dist/components/dialog/dialog.js"></script>
-
-
-
-
-<!--Memberstack to Crisp-->
-
-<script>
-MemberStack.onReady.then(function(member) {
-    var email = member["email"]
-    var name = member["name"]
-    if (member.loggedIn) {
-      try{
-        $crisp.push(["set", "user:email", [email] ])
-        $crisp.push(["set", "user:nickname", [name] ])
-      } catch(e) {
-    }
-  }
-})
-</script>
-
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ad91fdad-2b0a-4d81-84bd-61133009c574";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 
 
-<!--MS session duration-->
 
-<script>
-  ms_settings = {
-  session:  72 //hours
-  }
-</script>
-
-
-
-<!---SNIPCART STYLESHEET--->
-
- <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
-
-<link rel="manifest" href="/manifest.json">
-  <script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js"></script>
-   
 
 
 
@@ -465,11 +423,6 @@ MemberStack.onReady.then(function(member) {
   "dns-prefetch">
   
 
-<!--Redirect if JS is disabled-->
-
-<noscript>
-   <meta http-equiv="refresh" content="0; url=https://www.memberstack.io" />
-</noscript>
 
 <script>
   (function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 9008873587,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());
@@ -795,10 +748,6 @@ MemberStack.onReady.then(function(member) {
   })();
   </script>
 
-<sl-dialog label="Dialog" class="dialog-overview">
-  Sorry, you must be an active member of our community to access premium content.
-  <sl-button slot="footer" variant="primary">Close</sl-button>
-</sl-dialog>
 
 
 <script>
