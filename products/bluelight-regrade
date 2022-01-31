@@ -130,7 +130,7 @@ visibility:hidden!important;
                   </g>
                 </g></svg></a>
               </div>
---->
+
 
               <div class="w-commerce-commercecartformwrapper">
                 <form data-node-type="commerce-cart-form" style=
@@ -307,6 +307,8 @@ visibility:hidden!important;
         </div>
       </div>
     </div>
+--->
+
   </div>
   <div class="header-section">
     <div class="container-flex">
