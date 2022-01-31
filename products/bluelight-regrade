@@ -306,7 +306,7 @@
       <div class="title-wrap-centre">
         <h1 style=
         "-webkit-transform:translate3d(0, 25PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-        class="header-h1">Burger Dreams</h1>
+        class="header-h1">Bluelight Regrade</h1>
       </div>
     </div>
   </div>
@@ -717,6 +717,10 @@
       </div>
     </div>
   </div>
+
+
+--->
+
   <div class="content-section-bg">
     <div class="container-tight">
       <div data-duration-in="300" data-duration-out="100"
@@ -725,11 +729,11 @@
           <a data-w-tab="Tab 1" class=
           "tab-link-round w-inline-block w-tab-link w--current">
           <div>
-            Description
+            Availability
           </div></a><a data-w-tab="Tab 2" class=
           "tab-link-round w-inline-block w-tab-link">
           <div>
-            Additional Information
+            Specifications
           </div></a><a data-w-tab="Tab 3" class=
           "tab-link-round w-inline-block w-tab-link">
           <div>
@@ -778,7 +782,7 @@
           </div>
         </div>
       </div>
--->
+
 
 
     </div>
@@ -1341,17 +1345,25 @@
       </div>
     </div>
   </div>
+
+
+<!---
   <div class="cta-section">
     <div class="w-layout-grid cta-grid">
       <div class="cta-image"></div>
       <div class="cta-content">
         <h1 class="cta-heading"><span class=
-        "dark-span">Support</span> good food<br>
+        "dark-span">Support</span> good bud<br>
         and local business.</h1><a href="/order" class=
         "button-white button-space w-button">Order Now</a>
       </div>
     </div>
   </div>
+
+
+--->
+
+
   <div class="footer">
     <div class="container">
       <div class="w-layout-grid footer-grid">
