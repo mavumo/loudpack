@@ -1,0 +1,18 @@
+<head>
+<title>The Loudpack NFT Collection</title>
+
+<script>
+
+// Initialize provider
+import Fortmatic from 'fortmatic';
+import Web3 from 'web3';
+
+const fm = new Fortmatic('pk_live_FE51E504E9CC069D');
+window.web3 = new Web3(fm.getProvider());
+
+fm.user.login().then(() => {
+  web3.eth.getAccounts().then(console.log); // ['0x...']
+});
+
+</script>
+</head>
