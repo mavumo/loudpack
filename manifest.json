@@ -1,45 +1,46 @@
 {
   "background_color": "#ffffff",
-  "description": "South Africa's Premier Crypto Hub",
+  "description": "Premium strains, edibles and accessories.",
+  "lang": "en",
   "dir": "ltr",
   "display": "standalone",
   "name": "LOUDPACK®",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "LOUD",
+  "short_name": "LOUDPACK®",
   "start_url": "/login",
   "theme_color": "#35b8be",
-  "categories": [],
+  "categories": [Shopping],
   "screenshots": [],
   "icons": [
     {
-      "src": "https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3208e76b5eb_fav.png",
+      "src": "https://loudpack.co.za/Icon.png",
       "type": "image/png",
       "sizes": "32x32"
     },
     {
-      "src": "https://pwa.cirkleinc.com/icon152x152/shop-home-base-recordsicon_152x152.png",
+      "src": "https://loudpack.co.za/Icon.png",
       "type": "image/png",
       "sizes": "152x152"
     },
     {
-      "src": "https://pwa.cirkleinc.com/icon180x180/shop-home-base-recordsicon_180x180.png",
+      "src": "https://loudpack.co.za/Icon.png",
       "type": "image/png",
       "sizes": "180x180"
     },
     {
-      "src": "https://pwa.cirkleinc.com/icon167x167/shop-home-base-recordsicon_167x167.png",
+      "src": "https://loudpack.co.za/Icon.png",
       "type": "image/png",
       "sizes": "167x167"
     },
     {
-      "src": "https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b17076b5ec_webclip.png",
+      "src": "https://loudpack.co.za/Icon.png",
       "type": "image/png",
       "sizes": "256x256"
     },
 
 {
-      "src": "https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b17076b5ec_webclip.png",
+      "src": "https://loudpack.co.za/Icon.png",
       "type": "image/png",
       "sizes": "512x512"
     },
