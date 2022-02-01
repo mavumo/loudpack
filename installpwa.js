@@ -31,7 +31,7 @@ export const InstallPWA = ({...props}) => {
                             />
                     </div>
                     <div className="uk-margin-top uk-text-center">
-                        <h3>Install Bevyho!</h3>
+                        <h3>Install Loudpack!</h3>
                     </div>
                     <p className="uk-h4 uk-text-muted uk-text-center uk-margin-remove-top">Install this application on your homescreen for a better experience.</p>
                     <div className="uk-text-center">
