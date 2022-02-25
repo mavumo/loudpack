@@ -7,7 +7,7 @@
   "orientation": "portrait-primary",
   "scope": "/",
   "short_name": "LOUDPACK®",
-  "start_url": "/login",
+  "start_url": "/home",
   "theme_color": "#35b8be",
   "categories": ["shopping", "wellness"],
   "screenshots": [
