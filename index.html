@@ -54,63 +54,16 @@
   </script>
 
 
-        if (window.location.pathname === "/index") {
-          try {
-            const result = await magic.oauth.getRedirectResult();
-            const profile = JSON.stringify(result.oauth.userInfo, undefined, 2);
-
-            html = `
-                <h1>It Worked! 🎉</h1>
-                <h2>Your User Profile:</h2>
-                <pre><code class="json tomorrow">${profile}</code></pre>
-              `;
-          } catch {
-            window.location.href = window.location.origin;
-          }
-        } else {
-          html = `
-              <h2>Please sign up or log in</h2>
-              <form onsubmit="handleLogin(event)">
-                <button id="btn-send" class="google" type="submit">
-                  <img src="./sign-in-with-google.svg" />
-                </button>
-              </form>
-            `;
-        }
-
-        document.getElementById("app").innerHTML = html;
-        document.querySelectorAll("pre code").forEach((block) => {
-          hljs.highlightBlock(block);
-        });
-      };
-
-      /**
-       * Starts the OAuth 2.0 login flow.
-       */
-      const handleLogin = async (e) => {
-        e.preventDefault();
-
-        // Render a button "pending" state.
-        const btnSend = document.getElementById("btn-send");
-        btnSend.disabled = true;
-        btnSend.innerText = "Logging in...";
-
-        // Start the Google OAuth 2.0 flow!
-        const didToken = await magic.oauth.loginWithRedirect({
-          provider: "google",
-          redirectURI: `${window.location.origin}/callback`
-        });
-      };
-    </script>
+       
   </head>
  
 
-<body id="app" onload="render()">
+<body onload="render()">
 
 <div class="se-pre-con"></div>
 
-    <div id="login">Loading...</div>
-  </body>
+   
+  
 
 
 </div>
