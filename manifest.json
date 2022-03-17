@@ -4,10 +4,10 @@
   "dir": "ltr",
   "display": "standalone",
   "name": "LOUDPACK®",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "scope": "/",
   "short_name": "LOUDPACK®",
-  "start_url": "/home",
+  "start_url": "/",
   "theme_color": "#35b8be",
   "categories": ["shopping", "wellness"],
   "screenshots": [
