@@ -46,8 +46,23 @@ visibility: hidden!important;
       alt="" class="utility-image">
       <h2>Thanks for signing up!</h2>
       <div>
-        <p class="utility-paragraph">To activate and verify your account, you will be redirected to our payment processor <a href="https://paystack.com" class="link">Paystack</a> before placing your first order.<br/><br/><a href="https://paystack.com/pay/loudpack" class="button w-button">PROCEED</a></p>
-      </div>
+        <p class="utility-paragraph">To verify your account, tap the button below. You will be receive a link via SMS to pay your monthly subscription fee after successful verification.<br/><br/><a href="https://paystack.com/pay/loudpack" class="button w-button">PROCEED</a></p>
+
+</div>
+<br>
+<div id="passbase-button"></div>
+<script type="text/javascript">
+ Passbase.renderButton(
+document.getElementById("passbase-button"),
+This is your project related API key.
+"cSeBHKvdXSFgv9x4IrFZ6kO9j3LJvduCFqc0fd4bylLjZ7YJqjV6RzG5PSUOE5cp",{onStart: () => {},
+ onError: (errorCode) => {},
+ onFinish: (identityAccessKey) => {},
+  }
+ );
+</script>
+
+     
     </div>
   </div>
 
@@ -63,5 +78,9 @@ visibility: hidden!important;
   "https://assets.website-files.com/5e865e09d8efa3310676b585/js/webflow.bad13ffae.js"
   type="text/javascript"></script>
   <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+<!-- Place this before the </body> tag -->
+<script type="text/javascript"  src="https://unpkg.com/@passbase/button"></script>
+
 </body>
 </html>
