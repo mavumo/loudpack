@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/@passbase/button@v3/button.js"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Verify Your Identity - Loudpack South Africa</title>
+  </head>
+
+  <body>
+    <img
+      class="img-fluid passbase"
+      src="https://passbase.com/assets/images/logo.png"
+      alt="Passbase"
+    />
+
+    <div class="container">
+      <p class="title">Verify your Loudpack account for full access</p>
+      <p class="subtitle">
+        You can verify your identity by clicking the verification
+        button below
+      </p>
+
+      <!-- 1. This is the Passbase Component -->
+      <div id="passbase-button"></div>
+    </div>
+
+    <script type="text/javascript">
+      // This is the logic for the Passbase component
+      const element = document.getElementById("passbase-button");
+      // update the below variable with your own publishable API key**your, which you can find in the [API settings](https://app.passbase.com/settings/api) section.
+      const apiKey = "51yH7Sub5Ay3hVJz37H1Pwouf6YGvsVHjqHkQDMDiQl26gEIaL2SHk7BEX0RUnzq";
+      Passbase.renderButton(element, apiKey, {
+        // Speed up the verification flow by providing some information you might already have like the user's email to skip the email step
+        prefillAttributes: {
+          email: "user@email.de",
+        },
+        onFinish: (identityAccessKey) => {
+          // Do what you want after the flow finished
+          // sendAuthKeyToBackend(identityAccessKey)
+        },
+        onError: (errorCode) => {},
+        onStart: () => {},
+      });
+
+      // Optional - Example to send identity access key to your backend
+      const sendAuthKeyToBackend = (identityAccessKey) => {
+        const body = {
+          identityAccessKey: identityAccessKey,
+        };
+        const requestOptions = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
+        };
+        fetch("YOUR_BACKEND_POST_ENDPOINT", requestOptions)
+          .then(() => {
+            console.log("Success");
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      };
+    </script>
+  </body>
+</html>
